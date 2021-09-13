@@ -1,0 +1,26 @@
+cyl@Nidavellir:~$ pwd
+/home/cyl
+cyl@Nidavellir:~$ clear
+cyl@Nidavellir:~$ ls
+ AE          go                              project           UTBiscord
+ App         Images                          project_idea      UTBM
+ Bureau      Lonia                           Public            utilisateur.txt
+ Documents   Minecraft                       Qt                Vidéos
+ Dofus       script.sh                      'VirtualBox VMs'   Trove
+ Downloads   snap                            wakfu             Games 
+ Game        Musique                         Téléchargements   WCS
+cyl@Nidavellir:~$ cd WCS
+cyl@Nidavellir:~/WCS$ pwd
+/home/cyl/WCS
+cyl@Nidavellir:~/WCS$ cd
+cyl@Nidavellir:~$ pwd
+/home/cyl
+cyl@Nidavellir:~$ 
+
+
+
+
+
+
+
+
