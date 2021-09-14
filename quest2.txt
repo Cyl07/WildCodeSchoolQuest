@@ -1,60 +1,41 @@
-cyl@Nidavellir:~$ cd planets/
-cyl@Nidavellir:~/planets$ ls
-arrakis.jpeg    earth.jpeg    mercury.jpeg  saturn.jpeg
-coruscant.jpeg  jupiter.jpeg  neptune.jpeg  uranus.jpeg
-cybertron.jpeg  mars.jpeg     pluto.jpeg    venus.jpeg
-cyl@Nidavellir:~/planets$ mkdir real fictional inhabited
-cyl@Nidavellir:~/planets$ ls
-arrakis.jpeg    earth.jpeg  jupiter.jpeg  neptune.jpeg  saturn.jpeg
-coruscant.jpeg  fictional   mars.jpeg     pluto.jpeg    uranus.jpeg
-cybertron.jpeg  inhabited   mercury.jpeg  real          venus.jpeg
-cyl@Nidavellir:~/planets$ cd real/
-cyl@Nidavellir:~/planets/real$ mkdir terrestrial gas-giants dwarf-planets
-cyl@Nidavellir:~/planets/real$ cd ..
-cyl@Nidavellir:~/planets$ mv earth.jpeg venus.jpeg mars.jpeg mercury.jpeg real/
-dwarf-planets/ gas-giants/    terrestrial/   
-cyl@Nidavellir:~/planets$ mv earth.jpeg venus.jpeg mars.jpeg mercury.jpeg real/terrestrial/
-cyl@Nidavellir:~/planets$ ls
-arrakis.jpeg    fictional     neptune.jpeg  saturn.jpeg
-coruscant.jpeg  inhabited     pluto.jpeg    uranus.jpeg
-cybertron.jpeg  jupiter.jpeg  real
-cyl@Nidavellir:~/planets$ mv saturn.jpeg jupiter.jpeg neptune.jpeg uranus.jpeg real/gas-giants/
-cyl@Nidavellir:~/planets$ ls
-arrakis.jpeg    cybertron.jpeg  inhabited   real
-coruscant.jpeg  fictional       pluto.jpeg
-cyl@Nidavellir:~/planets$ mv pluto.jpeg real/dwarf-planets/
-cyl@Nidavellir:~/planets$ ls
-arrakis.jpeg    cybertron.jpeg  inhabited
-coruscant.jpeg  fictional       real
-cyl@Nidavellir:~/planets$ mv cybertron.jpeg arrakis.jpeg coruscant.jpeg fictional/
-cyl@Nidavellir:~/planets$ ls
-fictional  inhabited  real
-cyl@Nidavellir:~/planets$ mv real/terrestrial/earth.jpeg fictional/
-arrakis.jpeg    coruscant.jpeg  cybertron.jpeg  
-cyl@Nidavellir:~/planets$ cp real/terrestrial/earth.jpeg fictional/arrakis.jpeg fictional/coruscant.jpeg fictional/cybertron.jpeg inhabited/
-cyl@Nidavellir:~/planets$ ls
-fictional  inhabited  real
-cyl@Nidavellir:~/planets$ cd inhabited/
-cyl@Nidavellir:~/planets/inhabited$ ls
-arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  earth.jpeg
-cyl@Nidavellir:~/planets/inhabited$ cd ..
-cyl@Nidavellir:~/planets$ ls
-fictional  inhabited  real
-cyl@Nidavellir:~/planets$ rm -r real/
-dwarf-planets/ gas-giants/    terrestrial/   
-cyl@Nidavellir:~/planets$ rm -r real/
-dwarf-planets/ gas-giants/    terrestrial/   
-cyl@Nidavellir:~/planets$ rm -r real/dwarf-planets/
-cyl@Nidavellir:~/planets$ ls real/
-gas-giants  terrestrial
-cyl@Nidavellir:~/planets$ ls real/gas-giants/
-jupiter.jpeg  neptune.jpeg  saturn.jpeg  uranus.jpeg
-cyl@Nidavellir:~/planets$ ls real/terrestrial/
-earth.jpeg  mars.jpeg  mercury.jpeg  venus.jpeg
-cyl@Nidavellir:~/planets$ ls 
-fictional/ inhabited/ real/      
-cyl@Nidavellir:~/planets$ ls inhabited/
-arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  earth.jpeg
-cyl@Nidavellir:~/planets$ ls fictional/
-arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
-cyl@Nidavellir:~/planets$ 
+cyl@Nidavellir:~/WCS/planets$ find
+.
+./fictional
+./fictional/arrakis.jpeg
+./fictional/cybertron.jpeg
+./fictional/coruscant.jpeg
+./inhabited
+./inhabited/arrakis.jpeg
+./inhabited/cybertron.jpeg
+./inhabited/coruscant.jpeg
+./inhabited/earth.jpeg
+./real
+./real/gas-giants
+./real/gas-giants/uranus.jpeg
+./real/gas-giants/saturn.jpeg
+./real/gas-giants/jupiter.jpeg
+./real/gas-giants/neptune.jpeg
+./real/terrestrial
+./real/terrestrial/venus.jpeg
+./real/terrestrial/mars.jpeg
+./real/terrestrial/earth.jpeg
+./real/terrestrial/mercury.jpeg
+cyl@Nidavellir:~/WCS/planets$ history
+2005  curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+ 2006  unzip planets.zip 
+ 2007  ls
+ 2008  cd planets/
+ 2009  mkdir real fictional inhabited
+ 2010  cd real
+ 2011  mkdir terrestrial gas-giants dwarf-planets
+ 2012  cd ..
+ 2013  ks
+ 2014  ls
+ 2015  mv earth.jpeg mercury.jpeg venus.jpeg mars.jpeg real/terrestrial/
+ 2016  mv jupiter.jpeg neptune.jpeg uranus.jpeg saturn.jpeg real/gas-giants/
+ 2017  mv pluto.jpeg real/dwarf-planets/
+ 2018  mv arrakis.jpeg cybertron.jpeg coruscant.jpeg fictional/
+ 2019  cp fictional/* real/terrestrial/earth.jpeg inhabited/
+ 2020  rm -r real/dwarf-planets/
+ 2021  find
+ 2022  history
