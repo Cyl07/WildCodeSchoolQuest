@@ -1,0 +1,60 @@
+cyl@Nidavellir:~$ cd planets/
+cyl@Nidavellir:~/planets$ ls
+arrakis.jpeg    earth.jpeg    mercury.jpeg  saturn.jpeg
+coruscant.jpeg  jupiter.jpeg  neptune.jpeg  uranus.jpeg
+cybertron.jpeg  mars.jpeg     pluto.jpeg    venus.jpeg
+cyl@Nidavellir:~/planets$ mkdir real fictional inhabited
+cyl@Nidavellir:~/planets$ ls
+arrakis.jpeg    earth.jpeg  jupiter.jpeg  neptune.jpeg  saturn.jpeg
+coruscant.jpeg  fictional   mars.jpeg     pluto.jpeg    uranus.jpeg
+cybertron.jpeg  inhabited   mercury.jpeg  real          venus.jpeg
+cyl@Nidavellir:~/planets$ cd real/
+cyl@Nidavellir:~/planets/real$ mkdir terrestrial gas-giants dwarf-planets
+cyl@Nidavellir:~/planets/real$ cd ..
+cyl@Nidavellir:~/planets$ mv earth.jpeg venus.jpeg mars.jpeg mercury.jpeg real/
+dwarf-planets/ gas-giants/    terrestrial/   
+cyl@Nidavellir:~/planets$ mv earth.jpeg venus.jpeg mars.jpeg mercury.jpeg real/terrestrial/
+cyl@Nidavellir:~/planets$ ls
+arrakis.jpeg    fictional     neptune.jpeg  saturn.jpeg
+coruscant.jpeg  inhabited     pluto.jpeg    uranus.jpeg
+cybertron.jpeg  jupiter.jpeg  real
+cyl@Nidavellir:~/planets$ mv saturn.jpeg jupiter.jpeg neptune.jpeg uranus.jpeg real/gas-giants/
+cyl@Nidavellir:~/planets$ ls
+arrakis.jpeg    cybertron.jpeg  inhabited   real
+coruscant.jpeg  fictional       pluto.jpeg
+cyl@Nidavellir:~/planets$ mv pluto.jpeg real/dwarf-planets/
+cyl@Nidavellir:~/planets$ ls
+arrakis.jpeg    cybertron.jpeg  inhabited
+coruscant.jpeg  fictional       real
+cyl@Nidavellir:~/planets$ mv cybertron.jpeg arrakis.jpeg coruscant.jpeg fictional/
+cyl@Nidavellir:~/planets$ ls
+fictional  inhabited  real
+cyl@Nidavellir:~/planets$ mv real/terrestrial/earth.jpeg fictional/
+arrakis.jpeg    coruscant.jpeg  cybertron.jpeg  
+cyl@Nidavellir:~/planets$ cp real/terrestrial/earth.jpeg fictional/arrakis.jpeg fictional/coruscant.jpeg fictional/cybertron.jpeg inhabited/
+cyl@Nidavellir:~/planets$ ls
+fictional  inhabited  real
+cyl@Nidavellir:~/planets$ cd inhabited/
+cyl@Nidavellir:~/planets/inhabited$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  earth.jpeg
+cyl@Nidavellir:~/planets/inhabited$ cd ..
+cyl@Nidavellir:~/planets$ ls
+fictional  inhabited  real
+cyl@Nidavellir:~/planets$ rm -r real/
+dwarf-planets/ gas-giants/    terrestrial/   
+cyl@Nidavellir:~/planets$ rm -r real/
+dwarf-planets/ gas-giants/    terrestrial/   
+cyl@Nidavellir:~/planets$ rm -r real/dwarf-planets/
+cyl@Nidavellir:~/planets$ ls real/
+gas-giants  terrestrial
+cyl@Nidavellir:~/planets$ ls real/gas-giants/
+jupiter.jpeg  neptune.jpeg  saturn.jpeg  uranus.jpeg
+cyl@Nidavellir:~/planets$ ls real/terrestrial/
+earth.jpeg  mars.jpeg  mercury.jpeg  venus.jpeg
+cyl@Nidavellir:~/planets$ ls 
+fictional/ inhabited/ real/      
+cyl@Nidavellir:~/planets$ ls inhabited/
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  earth.jpeg
+cyl@Nidavellir:~/planets$ ls fictional/
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+cyl@Nidavellir:~/planets$ 
